@@ -66,6 +66,18 @@ questions:
         - value: "Recreate"
           description: "Kill existing pods before creating new ones"
 
+  - variable: myNewVar
+    label: "My New Var"
+    group: "Workload Configuration"
+    schema:
+      type: string
+      default: "First"
+      enum:
+        - value: "First"
+          description: "First option to show."
+        - value: "Second"
+          description: "Second option to show."
+
   - variable: extraArgs
     label: "Minio Extra Arguments"
     group: "Minio Configuration"
