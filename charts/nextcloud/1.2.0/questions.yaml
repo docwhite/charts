@@ -97,6 +97,15 @@ questions:
             default: "/var/www/html/data"
             required: true
 
+  - variable: certificate
+    description: "Nextcloud Certificate"
+    label: "Nextcloud Certificate"
+    group: "Nextcloud Configuration"
+    schema:
+      type: int
+      $ref:
+        - "definitions/certificate"
+
   # Update strategy
   - variable: updateStrategy
     description: "Upgrade Policy"
